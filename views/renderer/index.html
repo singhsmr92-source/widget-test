@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amazon Connect Widget Test</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 40px; }
+    </style>
+  </head>
+  <body>
+    <h1>Amazon Connect Widget Test</h1>
+    <p>Use this page to test customer-end post-chat survey.</p>
+
+    <!-- Paste your Amazon Connect communication widget script below this line -->
+    <script type="text/javascript">
+  (function(w, d, x, id){
+    s=d.createElement('script');
+    s.src='https://lumenoperations.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js';
+    s.async=1;
+    s.id=id;
+    d.getElementsByTagName('head')[0].appendChild(s);
+    w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+  })(window, document, 'amazon_connect', '090e4f26-ca0d-4818-a954-6be856219619');
+  amazon_connect('styles', { iconType: 'CHAT', openChat: { color: '#ffffff', backgroundColor: '#123456' }, closeChat: { color: '#ffffff', backgroundColor: '#123456'} });
+  amazon_connect('snippetId', 'QVFJREFIaFpvSmlkVlA5ZmlEZlNzMXhjOGF5cU1QQXl4Yk5PTHVoQm5IYWZiS21Wd0FGUjFaUUlUNERqRXI0dHNQeWZkZXVTQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNNytoRmZtYWx3UGdsKzRyMEFnRVFnQ3NsM1JvVmhkMUdKVUJ5WHBvbHBvWUhXV2NILzU2aTZtajdrcUJDdzdpM0RHODJsR3J6bXRoQU93V1o6OlNjaHB3RFVFckNOS0ZTQzVZbVZJOG16dWdsbUowRnFYVXdvUnVaRmVhOVZzS1VDSnA5cE1OUE1zdmx2bkVSVkl1MkIyWWRFOFhIYXhpdVJsOHdGSHF3Zis2RGRjdEFxRldScXhzS2NudERWTGlaRFhBTVhCaW5DeFNRYnZUOG5uOXNheitjRUx1UXNlQkdUMi9yYkdQQ3h6Z1BobEpvOD0=');
+  amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
+</script>
+  </body>
+</html>
